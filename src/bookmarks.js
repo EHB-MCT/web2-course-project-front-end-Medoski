@@ -14,7 +14,7 @@ window.onload = function () {
         buttonsArray.forEach(button => {
             button.addEventListener("click", function (e) {
 
-                fetch(`http://localhost:3000/games/${button.id}`, {
+                fetch(`https://web2-course-project-medoski.onrender.com/games/${button.id}`, {
                         method: "DELETE",
                         headers: {
                             'Content-Type': 'application/json',
@@ -36,7 +36,7 @@ window.onload = function () {
         let htmlString = ""
         let userId = sessionStorage.getItem("userId");
 
-        fetch(`http://localhost:3000/games/bookmarks/${userId}`, {
+        fetch(`https://web2-course-project-medoski.onrender.com/games/bookmarks/${userId}`, {
                 method: 'GET'
             })
             .then(response => {
@@ -167,7 +167,7 @@ window.onload = function () {
 
                 let gameRelease = button.parentElement.parentElement.lastElementChild.lastElementChild.lastElementChild.outerText;
 
-                fetch('http://localhost:3000/games', {
+                fetch('https://web2-course-project-medoski.onrender.com/games', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json'

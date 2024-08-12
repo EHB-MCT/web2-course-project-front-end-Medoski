@@ -10,7 +10,7 @@ async function register(
     password
 ) {
 
-    const response = await fetch('http://localhost:3000/users', {
+    const response = await fetch('https://web2-course-project-medoski.onrender.com/users', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -31,7 +31,7 @@ async function login(
     email,
     password
 ) {
-    const response = await fetch(`http://localhost:3000/users/login`, {
+    const response = await fetch(`https://web2-course-project-medoski.onrender.com/users/login`, {
         method: "POST",
         headers: {
             "Content-Type": "application/json"

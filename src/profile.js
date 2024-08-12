@@ -6,7 +6,7 @@ window.onload = function () {
     function getUserData() {
         let userId = sessionStorage.getItem("userId");
 
-        fetch(`http://localhost:3000/users/${userId}`, {
+        fetch(`https://web2-course-project-medoski.onrender.com/users/${userId}`, {
                 method: 'GET'
             })
             .then(response => {
@@ -81,7 +81,7 @@ window.onload = function () {
                 "email": emailValue,
                 "password": passwordValue
             }
-            fetch(`http://localhost:3000/users/${userId}`, {
+            fetch(`https://web2-course-project-medoski.onrender.com/users/${userId}`, {
                     method: "PUT",
                     headers: {
                         "Content-Type": "application/json",
@@ -117,7 +117,7 @@ window.onload = function () {
                 "email": emailValue,
                 "password": passwordValue
             }
-            fetch(`hhttp://localhost:3000/users/${userId}`, {
+            fetch(`https://web2-course-project-medoski.onrender.com/users/${userId}`, {
                     method: "PUT",
                     headers: {
                         "Content-Type": "application/json",
@@ -146,7 +146,7 @@ window.onload = function () {
         document.getElementById("deleteaccsure").addEventListener("click", function (e) {
             let userId = sessionStorage.getItem("userId");
 
-            fetch(`http://localhost:3000/users/${userId}`, {
+            fetch(`https://web2-course-project-medoski.onrender.com/users/${userId}`, {
                     method: "DELETE",
                     headers: {
                         'Content-Type': 'application/json',

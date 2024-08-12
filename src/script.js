@@ -122,7 +122,7 @@ window.onload = function () {
                 let gameName = button.previousSibling.outerText;
                 let gameRelease = button.parentElement.parentElement.lastElementChild.lastElementChild.lastElementChild.outerText;
 
-                fetch('http://localhost:3000/games/bookmarks/games', {
+                fetch('https://web2-course-project-medoski.onrender.com/games', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json'

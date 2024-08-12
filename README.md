@@ -18,7 +18,8 @@ This project includes a login system and bookmark system as seen in the lessons.
 
 - Github frontend repository :
 - Github backend repository : 
-- Github pages :  
+- Github pages : 
+- Heroku API : 
 - Adobe XD Wireframe : 
 - Adobe XD Design : 
 ## Login credentials
